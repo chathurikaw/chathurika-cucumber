@@ -30,10 +30,10 @@ public class LoginStepDef {
         Assert.assertEquals("SJ PHYSICS",title);
 	}
 
-	@And("user enters id and password")
-	public void userEntersIdAndPassword() {
-	    driver.findElement(By.id("inputEmail")).sendKeys("Test");
-	    driver.findElement(By.id("inputPassword")).sendKeys("Test");
+	@And("user enters \\\"(.*)\\\" and \\\"(.*)\\\"$")
+	public void userEntersIdAndPassword(String id, String password) {
+	    driver.findElement(By.id("inputEmail")).sendKeys(id);
+	    driver.findElement(By.id("inputPassword")).sendKeys(password);
 	}
 
 	@And("user clicks on login button")

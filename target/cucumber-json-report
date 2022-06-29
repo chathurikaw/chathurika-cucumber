@@ -4,13 +4,13 @@
     "elements": [
       {
         "line": 3,
-        "name": "SJPhysics Successful Login",
+        "name": "SJPhysics Successful Login  #Without examples",
         "description": "",
-        "id": "sjphysics-login-feature;sjphysics-successful-login",
+        "id": "sjphysics-login-feature;sjphysics-successful-login--#without-examples",
         "after": [
           {
             "result": {
-              "duration": 833604100,
+              "duration": 871488501,
               "status": "passed"
             },
             "match": {
@@ -23,7 +23,7 @@
         "steps": [
           {
             "result": {
-              "duration": 4635716900,
+              "duration": 4982496100,
               "status": "passed"
             },
             "line": 5,
@@ -35,7 +35,7 @@
           },
           {
             "result": {
-              "duration": 18518601,
+              "duration": 5167200,
               "status": "passed"
             },
             "line": 6,
@@ -47,19 +47,29 @@
           },
           {
             "result": {
-              "duration": 227452900,
+              "duration": 95806000,
               "status": "passed"
             },
             "line": 7,
-            "name": "user enters id and password",
+            "name": "user enters \"Chathunga\" and \"Chathunga\"",
             "match": {
-              "location": "LoginStepDef.userEntersIdAndPassword()"
+              "arguments": [
+                {
+                  "val": "Chathunga",
+                  "offset": 13
+                },
+                {
+                  "val": "Chathunga",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDef.userEntersIdAndPassword(String,String)"
             },
             "keyword": "And "
           },
           {
             "result": {
-              "duration": 957449300,
+              "duration": 875708599,
               "status": "passed"
             },
             "line": 8,
@@ -71,10 +81,101 @@
           },
           {
             "result": {
-              "duration": 55101899,
+              "duration": 55445400,
               "status": "passed"
             },
             "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDef.userIsOnHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "SJPhysics Successful Login  #With examples",
+        "description": "",
+        "id": "sjphysics-login-feature;sjphysics-successful-login--#with-examples;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 848105200,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3977670100,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "User is already in login page",
+            "match": {
+              "location": "LoginStepDef.userIsAlreadyInLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 3866400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "tile of login page is SJ PHYSICS",
+            "match": {
+              "location": "LoginStepDef.tileOfLoginPageIsSJPhysics()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 106766401,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user enters \"Chathunga\" and \"Chathunga\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "Chathunga",
+                  "offset": 13
+                },
+                {
+                  "val": "Chathunga",
+                  "offset": 29
+                }
+              ],
+              "location": "LoginStepDef.userEntersIdAndPassword(String,String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 867044399,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 25447500,
+              "status": "passed"
+            },
+            "line": 17,
             "name": "user is on home page",
             "match": {
               "location": "LoginStepDef.userIsOnHomePage()"

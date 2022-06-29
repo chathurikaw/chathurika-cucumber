@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="6.731612">
-    <testcase classname="SJPhysics Login feature" name="SJPhysics Successful Login" time="6.731612">
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="12.719308">
+    <testcase classname="SJPhysics Login feature" name="SJPhysics Successful Login  #Without examples" time="6.890137">
         <system-out><![CDATA[Given User is already in login page.........................................passed
 When tile of login page is SJ PHYSICS.......................................passed
-And user enters id and password.............................................passed
+And user enters "Chathunga" and "Chathunga".................................passed
+And user clicks on login button.............................................passed
+Then user is on home page...................................................passed
+]]></system-out>
+    </testcase>
+    <testcase classname="SJPhysics Login feature" name="SJPhysics Successful Login  #With examples" time="5.829171">
+        <system-out><![CDATA[Given User is already in login page.........................................passed
+When tile of login page is SJ PHYSICS.......................................passed
+And user enters "Chathunga" and "Chathunga".................................passed
 And user clicks on login button.............................................passed
 Then user is on home page...................................................passed
 ]]></system-out>
