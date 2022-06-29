@@ -1,0 +1,94 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 3,
+        "name": "SJPhysics Successful Login",
+        "description": "",
+        "id": "sjphysics-login-feature;sjphysics-successful-login",
+        "after": [
+          {
+            "result": {
+              "duration": 709770700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "LoginStepDef.tearDown()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 4380991900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User is already in login page",
+            "match": {
+              "location": "LoginStepDef.userIsAlreadyInLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 19646600,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "tile of login page is SJ PHYSICS",
+            "match": {
+              "location": "LoginStepDef.tileOfLoginPageIsSJPhysics()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 134142900,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user enters id and password",
+            "match": {
+              "location": "LoginStepDef.userEntersIdAndPassword()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 995592700,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user clicks on login button",
+            "match": {
+              "location": "LoginStepDef.user_clicks_on_login_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 52203800,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user is on home page",
+            "match": {
+              "location": "LoginStepDef.userIsOnHomePage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "SJPhysics Login feature",
+    "description": "",
+    "id": "sjphysics-login-feature",
+    "keyword": "Feature",
+    "uri": "file:login.feature",
+    "tags": []
+  }
+]
